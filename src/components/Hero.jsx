@@ -23,8 +23,8 @@ export default function Hero() {
             </div>
         </div>
         <div className="col relative">
-          <img className="absolute top-0 right-0" src="/src/assets/icons/Arrow.webp" alt="Arrow" />
-          <img src="/src/assets/images/hero.webp" alt="hero" />
+          <img className="absolute top-0 right-0" src="../assets/icons/Arrow.webp" alt="Arrow" />
+          <img src="../assets/images/hero.webp" alt="hero" />
         </div>
       </div>
     </section>
