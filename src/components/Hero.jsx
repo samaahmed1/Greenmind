@@ -1,3 +1,5 @@
+import heroImage from "../assets/images/hero.webp"
+import arrowIcons from "../assets/icons/Arrow.webp"
 export default function Hero() {
   return (
     <section>
@@ -23,8 +25,8 @@ export default function Hero() {
             </div>
         </div>
         <div className="col relative">
-          <img className="absolute top-0 right-0" src="../../src/assets/icons/Arrow.webp" alt="Arrow" />
-          <img src="../../src/assets/images/hero.webp" alt="hero" />
+          <img className="absolute top-0 right-0" src= {arrowIcons} alt="Arrow" />
+          <img src= {heroImage} alt="hero" />
         </div>
       </div>
     </section>
