@@ -3,7 +3,7 @@ import frameTwo from "../assets/images/Frame-2.webp";
 import frameThtee from "../assets/images/Frame-3.webp";
 export default function BestSelling() {
   return (
-    <section className="py-16">
+    <section className="py-20">
       <div className="container px-5 mx-auto flex flex-wrap justify-center md:justify-between gap-8">
         <div className="col flex flex-col gap-4">
           <h2 className="text-3xl font-bold">
