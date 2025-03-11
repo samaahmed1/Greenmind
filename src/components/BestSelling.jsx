@@ -4,7 +4,7 @@ import frameThtee from "../assets/images/Frame-3.webp";
 export default function BestSelling() {
   return (
     <section className="py-20">
-      <div className="container px-5 mx-auto flex flex-wrap justify-center md:justify-between gap-8">
+      <div className="container px-5 mx-auto flex flex-wrap justify-center lg:justify-between gap-8">
         <div className="col flex flex-col gap-4">
           <h2 className="text-3xl font-bold">
             Best Selling <br /> Plants
@@ -23,7 +23,7 @@ export default function BestSelling() {
           <p className="font-medium">Artificial Plants</p>
           <span className="text-gray-500 ">₱ 900.00</span>
         </div>
-        <div className="col flex flex-col gap-2 text-center md:text-starttext-center md:text-start">
+        <div className="col flex flex-col gap-2 text-center md:text-starttext-center md:text-start mx-auto xl:mx-0">
           <img src={frameThtee} alt={frameThtee} />
           <p className="font-medium">Artificial Plants</p>
           <span className="text-gray-500 ">₱ 3,500.00</span>

@@ -3,7 +3,7 @@ import arrowIcons from "../assets/icons/Arrow.webp"
 export default function Hero() {
   return (
     <section>
-      <div className="container pt-10 md:pt-0 px-5 mx-auto bg-[#C1DCDC] rounded-xl flex justify-center md:justify-between items-center flex-wrap gap-7 md:gap-0">
+      <div className="container pt-10 md:pt-0 px-5 mx-auto bg-[#C1DCDC] rounded-xl flex justify-center lg:justify-between items-center flex-wrap gap-7 md:gap-0">
         <div className="col flex flex-col gap-7">
           <h1 className="text-4xl md:text-6xl font-bold">
             Buy your <br /> dream plants
