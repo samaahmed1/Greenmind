@@ -26,7 +26,7 @@ export default function Categories() {
               <i className="fa-solid fa-arrow-right ml-2 text-lg"></i>
             </Link>
           </div>
-          <div className="mx-auto xl:mx-0 flex flex-col gap-3">
+          <div className="mx-auto flex flex-col gap-3">
             <img src={decorThree} alt={decorThree} />
             <span className="font-bold text-lg">Artificial Plants</span>
           </div>
