@@ -13,17 +13,17 @@ export default function BestSelling() {
             Easiest way to <br /> healthy life by buying <br /> your favorite plants
           </p>
         </div>
-        <div className="col">
+        <div className="col flex flex-col gap-2 text-center md:text-start">
           <img src={frameOne} alt={frameOne} />
           <p className="font-medium">Natural Plants</p>
           <span className="text-gray-500 ">₱ 1,400.00</span>
         </div>
-        <div className="col">
+        <div className="col flex flex-col gap-2 text-center md:text-start">
           <img src={frameTwo} alt={frameTwo} />
           <p className="font-medium">Artificial Plants</p>
           <span className="text-gray-500 ">₱ 900.00</span>
         </div>
-        <div className="col">
+        <div className="col flex flex-col gap-2 text-center md:text-starttext-center md:text-start">
           <img src={frameThtee} alt={frameThtee} />
           <p className="font-medium">Artificial Plants</p>
           <span className="text-gray-500 ">₱ 3,500.00</span>
