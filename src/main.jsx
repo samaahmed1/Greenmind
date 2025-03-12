@@ -6,6 +6,7 @@ import Footer from "./components/layouts/Footer.jsx";
 import Header from "./components/layouts/Header.jsx";
 import PlantsGallery from "./pages/PlantsGallery.jsx";
 import { BrowserRouter, Route, Routes } from "react-router";
+import ScrollToTopButton from "./components/ScrollToTop.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -15,6 +16,7 @@ createRoot(document.getElementById("root")).render(
         <Route path="/" element={<App />} />
         <Route path="/PlantsGallery" element={<PlantsGallery />} />
       </Routes>
+      <ScrollToTopButton />
       <Footer />
     </BrowserRouter>
   </StrictMode>
