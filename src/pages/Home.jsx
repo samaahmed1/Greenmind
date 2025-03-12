@@ -11,7 +11,7 @@ export default function Home() {
       <BestSelling />
       <AboutUs />
       <Categories />
-      <CustomerReviews/>
+      <CustomerReviews />
     </>
   );
 }

@@ -19,37 +19,37 @@ export default function Header() {
         >
           <ul className="flex gap-4 flex-col md:flex-row text-center">
             <li>
-              <Link
+              <a
                 className="font-semibold"
                 onClick={() => {
                   setOpenNav(false);
                 }}
-                to={"/"}
+                href="#best-selling"
               >
-                Home
-              </Link>
+                Best Selling
+              </a>
             </li>
             <li>
-              <Link
+              <a
                 className="text-gray-500"
                 onClick={() => {
                   setOpenNav(false);
                 }}
-                to={"/"}
+                href="#about-us"
               >
-                Products
-              </Link>
+                About us
+              </a>
             </li>
             <li>
-              <Link
+              <a
                 className="text-gray-500"
                 onClick={() => {
                   setOpenNav(false);
                 }}
-                to={"/"}
+                href="#categories"
               >
-                Contacts
-              </Link>
+                Categories
+              </a>
             </li>
           </ul>
           <div className="nav-icon flex items-center justify-center gap-5">

@@ -3,7 +3,7 @@ import vectorTwo from "../assets/icons/Vector-2.webp";
 import vectorThree from "../assets/icons/Vector-3.webp";
 export default function AboutUs() {
   return (
-    <section>
+    <section id="about-us">
       <div className="container px-5 mx-auto flex justify-center items-center text-center flex-col gap-9">
         <div className="col flex flex-col gap-4">
           <h2 className="text-3xl font-bold">About us</h2>

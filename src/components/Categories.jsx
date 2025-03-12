@@ -4,7 +4,7 @@ import decorTwo from "../assets/images/decor-2.webp";
 import decorThree from "../assets/images/decor-3.webp";
 export default function Categories() {
   return (
-    <section className="pt-20">
+    <section id="categories" className="pt-20">
       <div className="container px-5 mx-auto flex justify-center items-center text-center flex-col gap-9">
         <div className="col flex flex-col gap-4">
           <h2 className="text-3xl font-bold">Categories</h2>
