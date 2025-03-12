@@ -21,9 +21,9 @@ export default function Categories() {
             <p className="text-gray-500">
               Horem ipsum dolor sit amet, <br /> consectetur adipiscing elit.
             </p>
-            <Link className="font-semibold bg-white rounded-md p-2 w-[40%] mx-auto text-center text-lg" to={"/"}>
+            <Link className="font-semibold bg-white rounded-md p-2 w-[40%] mx-auto text-lg flex items-center justify-center gap-2" to={"/"}>
               More
-              <i className="fa-solid fa-arrow-right ml-2 text-lg"></i>
+              <i className="fa-solid fa-arrow-right text-lg mt-1"></i>
             </Link>
           </div>
           <div className="mx-auto flex flex-col gap-3">
