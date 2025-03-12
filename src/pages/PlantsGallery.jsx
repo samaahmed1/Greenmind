@@ -27,7 +27,7 @@ export default function PlantsGallery() {
           {plants.map((plant) => (
             <div className="flex-grow lg:flex-grow-0 w-auto lg:w-96 bg-[#C1DCDC] rounded-xl p-2 relative" key={plant.id}>
               <img className="w-44 h-44 mx-auto" src={plant.photo} alt={plant.title} />
-              <Link to={"/"}>
+              <Link to={`/plant/${plant.id}`}>
                 <i className="fa-solid fa-arrow-right text-lg absolute right-2 bottom-2 bg-white p-1 rounded-md text-[#5b9797] w-9 text-center"></i>
               </Link>
             </div>

@@ -4,6 +4,7 @@ import { createRoot } from "react-dom/client";
 import Footer from "./components/layouts/Footer.jsx";
 import Header from "./components/layouts/Header.jsx";
 import PlantsGallery from "./pages/PlantsGallery.jsx";
+import PlantsDetails from "./pages/PlantsDetails.jsx";
 import { StrictMode, useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import LoadingSpinner from "./pages/LoadingSpinner.jsx";
@@ -29,6 +30,14 @@ const AnimatedRoutes = () => {
           element={
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.5 }}>
               <PlantsGallery />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/Plant/:id"
+          element={
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.5 }}>
+              <PlantsDetails />
             </motion.div>
           }
         />
