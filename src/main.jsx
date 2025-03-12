@@ -1,16 +1,17 @@
 import "./index.css";
 import App from "./App.jsx";
-import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import Footer from "./components/layouts/Footer.jsx";
 import Header from "./components/layouts/Header.jsx";
 import PlantsGallery from "./pages/PlantsGallery.jsx";
-import { BrowserRouter, Route, Routes, useLocation } from "react-router";
-import ScrollToTopButton from "./components/ScrollToTop.jsx";
+import { StrictMode, useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import LoadingSpinner from "./pages/LoadingSpinner.jsx";
+import ScrollToTopButton from "./components/ScrollToTop.jsx";
+import { BrowserRouter, Route, Routes, useLocation } from "react-router";
 
 const AnimatedRoutes = () => {
-  const location = useLocation(); 
+  const location = useLocation();
 
   return (
     <AnimatePresence mode="wait">
@@ -18,12 +19,7 @@ const AnimatedRoutes = () => {
         <Route
           path="/"
           element={
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }} 
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.5 }} 
-            >
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.5 }}>
               <App />
             </motion.div>
           }
@@ -41,13 +37,32 @@ const AnimatedRoutes = () => {
   );
 };
 
-createRoot(document.getElementById("root")).render(
-  <StrictMode>
-    <BrowserRouter>
-      <Header />
-      <AnimatedRoutes />
-      <ScrollToTopButton />
-      <Footer />
-    </BrowserRouter>
-  </StrictMode>
-);
+const Root = () => {
+  const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  return (
+    <StrictMode>
+      <BrowserRouter>
+        {isLoading ? (
+          <LoadingSpinner />
+        ) : (
+          <>
+            <Header />
+            <AnimatedRoutes />
+            <ScrollToTopButton />
+            <Footer />
+          </>
+        )}
+      </BrowserRouter>
+    </StrictMode>
+  );
+};
+
+createRoot(document.getElementById("root")).render(<Root />);
