@@ -4,6 +4,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import Footer from "./components/layouts/Footer.jsx";
 import Header from "./components/layouts/Header.jsx";
+import PlantsGallery from "./pages/PlantsGallery.jsx";
 import { BrowserRouter, Route, Routes } from "react-router";
 
 createRoot(document.getElementById("root")).render(
@@ -12,6 +13,7 @@ createRoot(document.getElementById("root")).render(
       <Header />
       <Routes>
         <Route path="/" element={<App />} />
+        <Route path="/PlantsGallery" element={<PlantsGallery />} />
       </Routes>
       <Footer />
     </BrowserRouter>
